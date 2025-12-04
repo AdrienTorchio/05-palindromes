@@ -19,7 +19,7 @@ def ispalindrome(p):
     Retourne True si la chaîne ainsi traitée est un palindrome.
     """
     p=p.lower()
-    table=str.maketrans('éèêëàâäùûüôç','eeeeaaauuuoc',' \'!,-:?' )
+    table=str.maketrans('éèêëàâäùûüôç','eeeeaaauuuoc'," '!,-:?;.’")
     p=p.translate(table)
     return p == p[::-1]
 
